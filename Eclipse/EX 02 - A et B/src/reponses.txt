@@ -1,0 +1,13 @@
+Exercice A
+
+1) byte : Nombres entiers pour les faces d’un dé.
+2) double : Nombres réels entre 0 et 1 avec une grande précision.
+3) enum : Etat d’une imprimante : allumée, éteinte, en impression, en bourrage papier, en manque de papier ou en manque d’encre.
+4) long : Variable servant à calculer le 100e nombre de la suite de Fibonacci.
+5) bool :Codage de l’état ouvert ou fermée d’une porte.
+
+
+Exercice B
+
+1) a = 13
+2) a.valeur = 1
