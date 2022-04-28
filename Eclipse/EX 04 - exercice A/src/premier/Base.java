@@ -2,6 +2,7 @@ package premier;
 //	modificateurs d'acces (public, private, protect, 'default')
 //	modificateurs d'etat (final, static, abstract)
 
+@SuppressWarnings("unused")
 public class Base {
 	public int publicMember;
 	protected int protectedMember;

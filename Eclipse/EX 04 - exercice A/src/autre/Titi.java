@@ -3,7 +3,7 @@ package autre;
 import premier.Base;
 
 public class Titi extends Base {
-	void f() {
+	void g() {
 		//this.packageMember = 90;	//	impossible
 		//this.privateMember = 12;	//	impossible
 		this.protectedMember = 123;
