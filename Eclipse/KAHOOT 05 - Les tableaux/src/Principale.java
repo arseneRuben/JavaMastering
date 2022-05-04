@@ -16,6 +16,7 @@ public class Principale {
 		System.out.println();
 	}
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// declaration et initialisation
 		int[] tab = new int[10];

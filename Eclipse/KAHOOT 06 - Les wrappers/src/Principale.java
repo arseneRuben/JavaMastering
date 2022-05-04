@@ -1,4 +1,5 @@
 class MyInt {
+	@SuppressWarnings("unused")
 	private final int valeur;
 
 	public MyInt(int v) {
@@ -16,6 +17,7 @@ class MyInt {
 
 public class Principale {
 	public static void main(String[] args) {
+		@SuppressWarnings("unused")
 		int j = 45;
 		j++; // j = j + 1;
 
@@ -28,7 +30,8 @@ public class Principale {
 		MyInt l = new MyInt(43);
 		System.out.println(l);
 
-		i.valueOf(17);	//	correct mais peut-etre simplifié
+		@SuppressWarnings("all")
+		Integer m = i.valueOf(17);	//	correct mais peut-etre simplifié
 		//Integer.intValue();	// incorrect: non static
 	}
 }
