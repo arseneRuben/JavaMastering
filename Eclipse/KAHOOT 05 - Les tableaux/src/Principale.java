@@ -9,8 +9,8 @@ public class Principale {
 		}
 	}
 
-	public static void afficherTab(int[] alain) {
-		for (int v : alain) {
+	public static void afficherTab(int[] t) {
+		for (int v : t) {
 			System.out.print(v + " ");
 		}
 		System.out.println();
@@ -47,6 +47,19 @@ public class Principale {
 			System.out.print(v + " ");
 		}
 		System.out.println();
+
+		// declaration et initialisation
+		int[] toto = new int[10];
+
+		// on met des valeurs dans les cases
+		/*
+		 * for (int i = 0; i < tab.length; i++) { tab[i] = 2 * i + 7; }
+		 */
+		for (int v : toto) {
+			System.out.print(v + " ");
+		}
+		System.out.println();
+
 	}
 
 }
