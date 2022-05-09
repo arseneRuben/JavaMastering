@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Hashtable;
 import java.util.Map.Entry;
 
@@ -21,6 +22,14 @@ public class Principale {
 		al.set(0, 89);
 		al.add(0, 90);
 		Principale.afficher(al);
+
+		al.add(12);
+		al.add(51);
+		al.add(1);
+		al.add(235);
+		Collections.sort(al);
+
+		Principale.afficher(al);
 	}
 
 	public static void testHashTable() {
@@ -40,6 +49,14 @@ public class Principale {
 
 	public static void main(String[] args) {
 		Principale.testArrayList();
-		Principale.testHashTable();
+		/*
+		 * Principale.testHashTable();
+		 * 
+		 * Principale p = new Principale(); System.out.println(p);
+		 * System.out.println(p.hashCode());
+		 */
+
+		System.out.println(456);
+
 	}
 }
