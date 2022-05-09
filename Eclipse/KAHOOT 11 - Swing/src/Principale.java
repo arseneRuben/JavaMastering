@@ -11,7 +11,9 @@ import javax.swing.JWindow;
 class EcouteurBouton implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("COUCOU!!!");
+		Object o = e.getSource();
+		JButton btn = (JButton) o;
+		System.out.println("COUCOU: " + btn.getText());
 	}
 }
 
@@ -50,15 +52,30 @@ public class Principale {
 //			f.setVisible(true);
 //			attendre(500);
 //		}
-		
-		//	ajout d'un ecouteur sur le bouton
-		JButton monBouton = new JButton("Bouton 1"); 
+
+		// ajout d'un ecouteur sur le bouton
+		// EcouteurBouton ecouteur = new EcouteurBouton();
+
+		// un meme ecouteur pour 2 ecoutes (= 2 boutons ici)
+//		JButton monBouton = new JButton("Bouton 1"); 
+//		f.add(monBouton, BorderLayout.CENTER);
+//		monBouton.addActionListener(ecouteur);
+//		
+//		JButton unAutreBouton = new JButton("Bouton 2"); 
+//		f.add(unAutreBouton, BorderLayout.WEST);
+//		unAutreBouton.addActionListener(ecouteur);
+
+		// 2 ecouteurs pour un meme ecoute (un bouton ici)
+		JButton monBouton = new JButton("Bouton 1");
 		f.add(monBouton, BorderLayout.CENTER);
+		//EcouteurBouton ecouteur = new EcouteurBouton();
 		monBouton.addActionListener(new EcouteurBouton());
-		f.setVisible(true);
+		monBouton.addActionListener(new EcouteurBouton());
 
 		
 		
+		f.setVisible(true);
+
 		int cpt = 0;
 		while (true) {
 			System.out.println(cpt);
