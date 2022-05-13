@@ -8,7 +8,7 @@ public class Principale {
 			throw new Exception("COUCOU!");
 		}
 		System.out.println("Dans get...");
-		return res;
+		return res; 
 	}
 
 	public static void main(String[] args) throws Exception {
