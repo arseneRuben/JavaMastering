@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 import modele.Personne;
 
+@SuppressWarnings("serial")
 class MyArrayList<E> extends ArrayList<E> {
 	@Override
 	public String toString() {
@@ -40,6 +41,7 @@ public class Principale {
 			
 	}
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		MyArrayList<Personne> liste = new MyArrayList<>();
 

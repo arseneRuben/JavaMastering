@@ -58,9 +58,6 @@ public class Principale {
 	public static void main(String[] args) {
 		//Principale.lecture("src/Principale.java");
 		Principale.ecriture("src/toto.txt");
-		
-		String str;
-		
 	}
 }
 

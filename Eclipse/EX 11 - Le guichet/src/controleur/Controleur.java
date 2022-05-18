@@ -12,6 +12,7 @@ public class Controleur {
 		this.leCompte = leCompte;
 	}
 
+	@SuppressWarnings("unused")
 	public void action() {
 		// 1- demander quelle est l'action demandee par l'utilisateur de l'applciation
 		String action = laVue.getAction();

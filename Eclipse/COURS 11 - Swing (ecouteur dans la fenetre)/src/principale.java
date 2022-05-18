@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
+@SuppressWarnings("serial")
 class MaFenetre extends JFrame implements ActionListener {
 
 	JLabel lbl;

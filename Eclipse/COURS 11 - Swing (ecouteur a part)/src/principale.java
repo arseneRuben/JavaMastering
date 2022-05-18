@@ -18,6 +18,7 @@ class EcouteurBouton implements ActionListener {
 	}
 }
 
+@SuppressWarnings("serial")
 class MaFenetre extends JFrame {
 
 	JLabel lbl;
