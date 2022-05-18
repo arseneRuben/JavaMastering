@@ -1,14 +1,9 @@
-import java.util.ArrayList;
-import java.util.Vector;
-
 class MonProcessus extends Thread {
 	public static Object stylo = new Object();
 	public static int cpt = 0; // ressource à synchroniser
 
 	@Override
 	public void run() {
-		ArrayList<Integer> v;
-		v.get(cpt)
 		for (int i = 0; i < 10; i++) {
 			synchronized (MonProcessus.stylo) {
 				MonProcessus.cpt++;
