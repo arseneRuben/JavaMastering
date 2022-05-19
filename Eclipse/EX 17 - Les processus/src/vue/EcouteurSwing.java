@@ -16,7 +16,7 @@ public class EcouteurSwing extends JFrame implements IEcouteurCompteur {
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setSize(200, 200);
 		this.setLocation(1920 + 200,  200);
-		
+
 		if (EcouteurSwing.laFonte == null) {
 			throw new Exception("Fonte pas correcte!!!");
 		}
